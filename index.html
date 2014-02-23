@@ -19,6 +19,7 @@
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -65,70 +66,93 @@
 </section>
 <section>
     <p>
+
+    <h2>How to create a Hypermedia API?</h2>
+    <ol>
+        <li class="fragment">Evaluate Business Processes</li>
+        <li class="fragment">Create State Machine</li>
+        <li class="fragment">Evaluate Media Types</li>
+        <li class="fragment">Create Media Type</li>
+        <li class="fragment">Implement</li>
+    </ol>
+    </p>
+</section>
+<section>
+    <h2>1. Evaluate Business Processes</h2>
+
+    <p>
     <ul>
         <li class="fragment">Employee ab12cd logs in</li>
         <li class="fragment">Employee searches customer John Johnson</li>
-        <li class="fragment">Employee swipes John to the dialog box, so his colleague can take over</li>
-
-
+        <li class="fragment">Employee swipes John to the sales session (dialog box), so his colleague can take over</li>
         <li class="fragment">Employee qr34st logs in</li>
-        <li class="fragment">Employee Checks the dialog box and picks up John Johnson</li>
+        <li class="fragment">Employee Checks the dialog box and claims John Johnson</li>
     </ul>
 
-    <img src="img/screen.png">
+    <img src="img/screen.png" class="height-small">
     </p>
 </section>
 <section>
+    <h2>2. Create State Machine</h2>
+    <h3>Definition</h3>
     <p>
-        <img src="img/statemachine.png">
+    <ul>
+        <li>It is conceived as an abstract machine that can be in one of <b>a finite number of
+            states</b>.
+        </li>
+        <li>The machine is in only one state at a time.</li>
+        <li>consists of :
+            <ul>
+                <li>state</li>
+                <li>transition Function</li>
+            </ul>
+        </li>
+        <li>Classic examples: traffic lights, vending machines and elevators</li>
+    </ul>
     </p>
 </section>
 <section>
+    <h2>2. Create State Machine</h2>
     <p>
-        <img src="img/statemachinetable.png">
+        <img height="600" src="img/statemachine.png">
     </p>
 </section>
-
-
-<!-- Example of nested vertical slides -->
 <section>
     <section>
-        <h2>Vertical Slides</h2>
-
-        <p>
-            Slides can be nested inside of other slides,
-            try pressing <a href="#" class="navigate-down">down</a>.
-        </p>
+        <h2>State Machine of Turnstile Gate</h2>
         <a href="#" class="image navigate-down">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
+            <img width="300" height="400" src="img/Turnstile_Gate.jpeg"
                  alt="Down arrow">
+            <img width="600" height="400" src="img/Turnstile_state_machine.png" alt="Down arrow">
         </a>
     </section>
     <section>
-        <h2>Basement Level 1</h2>
-
-        <p>Press down or up to navigate.</p>
-    </section>
-    <section>
-        <h2>Basement Level 2</h2>
-
-        <p>Cornify</p>
-        <a class="test" href="http://cornify.com">
-            <img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif"
-                 alt="Unicorn">
-        </a>
-    </section>
-    <section>
-        <h2>Basement Level 3</h2>
-
-        <p>That's it, time to go back up.</p>
-        <a href="#/2" class="image">
-            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow"
-                 style="-webkit-transform: rotate(180deg);">
-        </a>
+        <h2>State Machine of traffic light</h2>
+        <img width="100%" height="100%" src="img/Traffic_light.jpg">
     </section>
 </section>
-
+<section>
+    <h2>2. Create State Machine</h2>
+    <p>
+        <img height="600" src="img/statemachine.png">
+    </p>
+</section>
+<section>
+    <ol>
+        <li >Evaluate Business Processes</li>
+        <li class="fragment colorRed">Define Resources</li>
+        <li>Create State Machine <p class="fragment colorRed"> of resources</p></li>
+        <li>Evaluate Media Types</li>
+        <li>Create Media Type</li>
+        <li>Implement</li>
+    </ol>
+</section>
+<section>
+    <h2>2. Define Resources</h2>
+    <p>
+        <img height="600" src="img/resources.png">
+    </p>
+</section>
 <section>
     <h2>Slides</h2>
 

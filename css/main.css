@@ -62,8 +62,16 @@ canvas,
 img,
 video {
     vertical-align: middle;
+    height:600px;
 }
 
+.height-small {
+    height:300px !important;
+}
+
+.colorRed {
+    color: red;
+}
 /*
  * Remove default fieldset styles.
  */
