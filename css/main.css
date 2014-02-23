@@ -68,6 +68,9 @@ video {
 .height-small {
     height:300px !important;
 }
+.height-medium {
+    height:400px !important;
+}
 
 .colorRed {
     color: red;
