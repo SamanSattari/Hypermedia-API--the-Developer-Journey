@@ -173,6 +173,13 @@
 
 <section>
     <section>
+        <h2>3. State Machine of Employee</h2>
+
+        <p>
+            <img class="height-medium" src="img/EmployeeStateMachine.png">
+        </p>
+    </section>
+    <section>
         <h2>3. State Machine of SalesSession</h2>
 
         <p>
@@ -184,13 +191,6 @@
 
         <p>
             <img class="height-medium" src="img/CustomerStateMachine.png">
-        </p>
-    </section>
-    <section>
-        <h2>3. State Machine of Employee</h2>
-
-        <p>
-            <img class="height-medium" src="img/EmployeeStateMachine.png">
         </p>
     </section>
 </section>
@@ -219,48 +219,48 @@
             <ul>
                 <li class="fragment"> Too Complicated</li>
             </ul>
-            <pre  class="fragment"><code data-trim contenteditable>
-                {
-                "_links": {
-                "self": { "href": "/orders" },
-                "curies": [{ "name": "ea", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
-                "next": { "href": "/orders?page=2" },
-                "ea:find": { "href": "/orders{?id}", "templated": true },
-                "ea:admin": [{
-                "href": "/admins/2",
-                "title": "Fred"
-                }, {
-                "href": "/admins/5",
-                "title": "Kate"
-                }]
-                },
-                "currentlyProcessing": 14,
-                "shippedToday": 20,
-                "_embedded": {
-                "ea:order": [{
-                "_links": {
-                "self": { "href": "/orders/123" },
-                "ea:basket": { "href": "/baskets/98712" },
-                "ea:customer": { "href": "/customers/7809" }
-                },
-                "total": 30.00,
-                "currency": "USD",
-                "status": "shipped"
-                }, {
-                "_links": {
-                "self": { "href": "/orders/124" },
-                "ea:basket": { "href": "/baskets/97213" },
-                "ea:customer": { "href": "/customers/12369" }
-                },
-                "total": 20.00,
-                "currency": "USD",
-                "status": "processing"
-                }]
-                }
-                }
-            </code></pre>
         </li>
     </ul>
+    <pre class="fragment"><code data-trim contenteditable>
+        {
+        "_links": {
+        "self": { "href": "/orders" },
+        "curies": [{ "name": "ea", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
+        "next": { "href": "/orders?page=2" },
+        "ea:find": { "href": "/orders{?id}", "templated": true },
+        "ea:admin": [{
+        "href": "/admins/2",
+        "title": "Fred"
+        }, {
+        "href": "/admins/5",
+        "title": "Kate"
+        }]
+        },
+        "currentlyProcessing": 14,
+        "shippedToday": 20,
+        "_embedded": {
+        "ea:order": [{
+        "_links": {
+        "self": { "href": "/orders/123" },
+        "ea:basket": { "href": "/baskets/98712" },
+        "ea:customer": { "href": "/customers/7809" }
+        },
+        "total": 30.00,
+        "currency": "USD",
+        "status": "shipped"
+        }, {
+        "_links": {
+        "self": { "href": "/orders/124" },
+        "ea:basket": { "href": "/baskets/97213" },
+        "ea:customer": { "href": "/customers/12369" }
+        },
+        "total": 20.00,
+        "currency": "USD",
+        "status": "processing"
+        }]
+        }
+        }
+    </code></pre>
     </p>
 </section>
 <section>
@@ -278,18 +278,40 @@
     <h2>5. Create Media Type</h2>
 
     <p>
+    <pre class="fragment"><code data-trim contenteditable>
+        {
+        "_links": {
+        "self": {
+        "href":"/"
+        }
+        },
+        "mysessions": [
+        {"href":"/salesessions/2"}
+        ],
+        "generalsessions": [
+        {"href":"/salesessions/1/claim", "method": "POST"},
+        {"href":"/salesessions/3/claim", "method": "POST"}
+        ],
+        "search": {
+        "href":"/customers",
+        "query": ["accountNumber", "firstName"]
+        }
+        }
 
+    </code></pre>
+    <a href="http://api-portal.anypoint.mulesoft.com/raml/api-designer">API Designer</a>
     </p>
 </section>
 <section>
     <h2>6. Implementation</h2>
 
     <p>
-
+        <a href="http://bc00001.nl.europe.intranet:3000/"> http://bc00001.nl.europe.intranet:3000/ </a>
     </p>
 </section>
 <section>
     <h2>Recap</h2>
+
     <h2>Steps to make Hypermedia API</h2>
     <ol>
         <li>Evaluate Business Processes</li>
@@ -302,10 +324,32 @@
 </section>
 <section>
     <h2>technologies</h2>
-
+    <img class="height-very-small" width="400" src="img/express.png">
+    <img class="height-very-small" width="400" src="img/nodejs.png">
+    <img class="height-very-small" width="300"src="img/mule.png">
+    <img class="height-very-small" width="400"src="img/angular.png">
+    <img class="height-very-small" width="200" src="img/mongo.png">
 </section>
 <section>
     <h2>team</h2>
+
+    <ul>
+        <h4>Api team</h4>
+        <li>Yun Bei</li>
+        <li>Rui Chen</li>
+        <li>Saman Sattari Khavas</li>
+        <li>Saurabh Joshi</li>
+        <li>Satya Deeleep Bandaru</li>
+
+    <h4>Front end team</h4>
+        <li>Martijn van der Wijst </li>
+        <li>Willem Veelenturf</li>
+        <li>Folkert Schram de Jong</li>
+        <li>Jasmin Jane Rengers-Gerritsen</li>
+        <li>Erik Mons</li>
+        <li>Chris aukema</li>
+        <li>Helma Duyvestein</li>
+    </ul>
 
 </section>
 

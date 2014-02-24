@@ -65,6 +65,9 @@ video {
     height:600px;
 }
 
+.height-very-small {
+    height:100px !important;
+}
 .height-small {
     height:300px !important;
 }
