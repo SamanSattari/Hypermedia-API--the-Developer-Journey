@@ -75,6 +75,11 @@ video {
     height:400px !important;
 }
 
+.emphasize{
+    color: aqua;
+    font-style: oblique;
+}
+
 .colorRed {
     color: red;
 }

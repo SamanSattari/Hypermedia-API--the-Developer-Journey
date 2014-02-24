@@ -78,46 +78,68 @@
     </p>
 </section>
 <section>
-    <h2>1. Evaluate Business Processes</h2>
+    <p>
+
+    <h2>How to create a Hypermedia API?</h2>
+    <ol>
+        <li class="fragment emphasize">Evaluate Business Processes</li>
+        <li>Create State Machine</li>
+        <li>Evaluate Media Types</li>
+        <li>Create Media Type</li>
+        <li>Implement</li>
+    </ol>
+    </p>
+</section>
+<section>
+    <h2>Evaluate Business Processes</h2>
 
     <p>
     <ul>
         <li class="fragment">Employee ab12cd logs in</li>
         <li class="fragment">Employee searches customer John Johnson</li>
-        <li class="fragment">Employee swipes John to the sales session (dialog box), so his colleague can take over</li>
+        <li class="fragment">Employee adds customer John Johnson to the sales session (dialog box)</li>
+        <li class="fragment">Employee swipes the sales session so his colleague can take over</li>
         <li class="fragment">Employee qr34st logs in</li>
-        <li class="fragment">Employee Checks the dialog box and claims John Johnson</li>
+        <li class="fragment">Employee Checks the dialog box and claims teh sales session</li>
     </ul>
 
     <img src="img/screen.png" class="height-small">
     </p>
 </section>
 <section>
-    <h2>2. Create State Machine</h2>
+    <p>
 
-    <h3>Definition</h3>
+    <h2>How to create a Hypermedia API?</h2>
+    <ol>
+        <li>Evaluate Business Processes</li>
+        <li class="fragment emphasize">Create State Machine</li>
+        <li>Evaluate Media Types</li>
+        <li>Create Media Type</li>
+        <li>Implement</li>
+    </ol>
+    </p>
+</section>
+
+<section>
+    <h2 class="emphasize">Create State Machine</h2>
+
+    <h3> What is an state machine?</h3>
 
     <p>
     <ul>
-        <li>It is conceived as an abstract machine that can be in one of <b>a finite number of
+        <li class="fragment">It is conceived as an abstract machine that can be in one of <b class="emphasize">a finite
+            number of
             states</b>.
         </li>
-        <li>The machine is in only one state at a time.</li>
-        <li>consists of :
+        <li class="fragment">The machine is in only one state at a time.</li>
+        <li class="fragment">consists of :
             <ul>
                 <li>state</li>
                 <li>transition Function</li>
             </ul>
         </li>
-        <li>Classic examples: traffic lights, vending machines and elevators</li>
+        <li class="fragment">Classic examples: traffic lights, vending machines and elevators</li>
     </ul>
-    </p>
-</section>
-<section>
-    <h2>2. Create State Machine</h2>
-
-    <p>
-        <img height="600" src="img/statemachine.png">
     </p>
 </section>
 <section>
@@ -135,7 +157,7 @@
     </section>
 </section>
 <section>
-    <h2>2. Create State Machine</h2>
+    <h2>Create State Machine</h2>
 
     <p>
         <img height="600" src="img/statemachine.png">
@@ -145,15 +167,19 @@
     <h2>Steps to make Hypermedia API</h2>
     <ol>
         <li>Evaluate Business Processes</li>
-        <li class="fragment colorRed">Define Resources</li>
-        <li>Create State Machine <p class="fragment colorRed"> of resources</p></li>
+        <li>Create State Machine
+            <ol>
+                <li class="fragment emphasize">Define Resources</li>
+                <li class="fragment">Create State Machine <p class="emphasize">of each resource</li>
+            </ol>
+        </li>
         <li>Evaluate Media Types</li>
         <li>Create Media Type</li>
         <li>Implement</li>
     </ol>
 </section>
 <section>
-    <h2>2. Define Resources</h2>
+    <h2>Define Resources</h2>
 
     <p>
         <img class="height-medium" src="img/resources.png">
@@ -163,8 +189,12 @@
     <h2>Steps to make Hypermedia API</h2>
     <ol>
         <li>Evaluate Business Processes</li>
-        <li>Define Resources</li>
-        <li><b>Create State Machine of resources</b></p></li>
+        <li>Create State Machine
+            <ol>
+                <li>Define Resources</li>
+                <li class="fragment emphasize">Create State Machine of each resource</li>
+            </ol>
+        </li>
         <li>Evaluate Media Types</li>
         <li>Create Media Type</li>
         <li>Implement</li>
@@ -173,21 +203,21 @@
 
 <section>
     <section>
-        <h2>3. State Machine of Employee</h2>
+        <h2>State Machine of Employee</h2>
 
         <p>
             <img class="height-medium" src="img/EmployeeStateMachine.png">
         </p>
     </section>
     <section>
-        <h2>3. State Machine of SalesSession</h2>
+        <h2>State Machine of SalesSession</h2>
 
         <p>
             <img src="img/SalesSessionStateMachine.png">
         </p>
     </section>
     <section>
-        <h2>3. State Machine of Customer</h2>
+        <h2>State Machine of Customer</h2>
 
         <p>
             <img class="height-medium" src="img/CustomerStateMachine.png">
@@ -198,15 +228,19 @@
     <h2>Steps to make Hypermedia API</h2>
     <ol>
         <li>Evaluate Business Processes</li>
-        <li>Define Resources</li>
-        <li>Create State Machine of resources</p></li>
-        <li><b>Evaluate Media Types</b></li>
+        <li>Create State Machine
+            <ol>
+                <li>Define Resources</li>
+                <li>Create State Machine of each resource</li>
+            </ol>
+        </li>
+        <li class="fragment emphasize">Evaluate Media Types</li>
         <li>Create Media Type</li>
         <li>Implement</li>
     </ol>
 </section>
 <section>
-    <h2>4. Evaluate Media Types</h2>
+    <h2>Evaluate Media Types</h2>
 
     <p>
     <ul>
@@ -215,11 +249,7 @@
                 <li class="fragment"> need information about hyperMedia</li>
             </ul>
         </li>
-        <li class="fragment">application/hal+json
-            <ul>
-                <li class="fragment"> Too Complicated</li>
-            </ul>
-        </li>
+        <li class="fragment">application/hal+json</li>
     </ul>
     <pre class="fragment"><code data-trim contenteditable>
         {
@@ -267,17 +297,22 @@
     <h2>Steps to make Hypermedia API</h2>
     <ol>
         <li>Evaluate Business Processes</li>
-        <li>Define Resources</li>
-        <li>Create State Machine of resources</li>
+        <li>Create State Machine
+            <ol>
+                <li>Define Resources</li>
+                <li>Create State Machine of each resource</li>
+            </ol>
+        </li>
         <li>Evaluate Media Types</li>
-        <li><b>Create Media Type</b></li>
+        <li class="fragment emphasize">Create Media Type</li>
         <li>Implement</li>
     </ol>
 </section>
 <section>
-    <h2>5. Create Media Type</h2>
+    <section>
+        <h2>Create Media Type</h2>
 
-    <p>
+        <p>
     <pre class="fragment"><code data-trim contenteditable>
         {
         "_links": {
@@ -299,14 +334,75 @@
         }
 
     </code></pre>
-    <a href="http://api-portal.anypoint.mulesoft.com/raml/api-designer">API Designer</a>
-    </p>
+        <a href="http://api-portal.anypoint.mulesoft.com/raml/api-designer">API Designer</a>
+        </p>
+    </section>
+    <section>
+        <h2>HAL</h2>
+
+    <pre><code data-trim contenteditable>
+        {
+        "_links": {
+        "self": { "href": "/orders" },
+        "curies": [{ "name": "ea", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
+        "next": { "href": "/orders?page=2" },
+        "ea:find": { "href": "/orders{?id}", "templated": true },
+        "ea:admin": [{
+        "href": "/admins/2",
+        "title": "Fred"
+        }, {
+        "href": "/admins/5",
+        "title": "Kate"
+        }]
+        },
+        "currentlyProcessing": 14,
+        "shippedToday": 20,
+        "_embedded": {
+        "ea:order": [{
+        "_links": {
+        "self": { "href": "/orders/123" },
+        "ea:basket": { "href": "/baskets/98712" },
+        "ea:customer": { "href": "/customers/7809" }
+        },
+        "total": 30.00,
+        "currency": "USD",
+        "status": "shipped"
+        }, {
+        "_links": {
+        "self": { "href": "/orders/124" },
+        "ea:basket": { "href": "/baskets/97213" },
+        "ea:customer": { "href": "/customers/12369" }
+        },
+        "total": 20.00,
+        "currency": "USD",
+        "status": "processing"
+        }]
+        }
+        }
+    </code></pre>
+        </p>
+    </section>
 </section>
 <section>
-    <h2>6. Implementation</h2>
+    <h2>Steps to make Hypermedia API</h2>
+    <ol>
+        <li>Evaluate Business Processes</li>
+        <li>Create State Machine
+            <ol>
+                <li>Define Resources</li>
+                <li>Create State Machine of each resource</li>
+            </ol>
+        </li>
+        <li>Evaluate Media Types</li>
+        <li>Create Media Type</li>
+        <li class="fragment emphasize">Implementation</li>
+    </ol>
+</section>
+<section>
+    <h2>Implementation</h2>
 
     <p>
-        <a href="http://bc00001.nl.europe.intranet:3000/"> http://bc00001.nl.europe.intranet:3000/ </a>
+        <a href="http://bc00001.nl.europe.intranet:3001/"> http://bc00001.nl.europe.intranet:3001/ </a>
     </p>
 </section>
 <section>
@@ -314,20 +410,24 @@
 
     <h2>Steps to make Hypermedia API</h2>
     <ol>
-        <li>Evaluate Business Processes</li>
-        <li>Define Resources</li>
-        <li>Create State Machine of resources</li>
-        <li>Evaluate Media Types</li>
-        <li>Create Media Type</li>
-        <li>Implement</li>
+        <li class="fragment">Evaluate Business Processes</li>
+        <li class="fragment">Create State Machine
+            <ol>
+                <li>Define Resources</li>
+                <li>Create State Machine of each resource</li>
+            </ol>
+        </li>
+        <li class="fragment">Evaluate Media Types</li>
+        <li class="fragment">Create Media Type</li>
+        <li class="fragment">Implementation</li>
     </ol>
 </section>
 <section>
     <h2>technologies</h2>
     <img class="height-very-small" width="400" src="img/express.png">
     <img class="height-very-small" width="400" src="img/nodejs.png">
-    <img class="height-very-small" width="300"src="img/mule.png">
-    <img class="height-very-small" width="400"src="img/angular.png">
+    <img class="height-very-small" width="300" src="img/mule.png">
+    <img class="height-very-small" width="400" src="img/angular.png">
     <img class="height-very-small" width="200" src="img/mongo.png">
 </section>
 <section>
@@ -341,8 +441,8 @@
         <li>Saurabh Joshi</li>
         <li>Satya Deeleep Bandaru</li>
 
-    <h4>Front end team</h4>
-        <li>Martijn van der Wijst </li>
+        <h4>Front end team</h4>
+        <li>Martijn van der Wijst</li>
         <li>Willem Veelenturf</li>
         <li>Folkert Schram de Jong</li>
         <li>Jasmin Jane Rengers-Gerritsen</li>
@@ -352,7 +452,27 @@
     </ul>
 
 </section>
-
+<section>
+    <h2> Lesson Learned</h2>
+    <ul>
+        <li class="fragment"> Creating a hypermedia API is:
+            <ul>
+                <li>a) Easy</li>
+                <li>b) very hard</li>
+            </ul>
+        </li>
+        <li class="fragment"> Know your Actor
+        </li>
+        <li class="fragment"> Define Resources
+        </li>
+        <li class="fragment"> Define state machine
+        </li>
+        <li class="fragment"> Use a more descriptive media type
+        </li>
+        <li class="fragment"> Implement the API before the front end
+        </li>
+    </ul>
+</section>
 <section>
     <h1>Questions?</h1>
 </section>
